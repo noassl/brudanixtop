@@ -66,10 +66,6 @@
     group = "users";
     dataDir = "/home/janik";
     settings = {
-      gui = {
-        user = "janik";
-        password = "Janik2709";
-      };
       devices = {
         "nuc" = { id = "B4O2E22-ODHTZSL-4WVSCWE-2CMG3D3-4ODK6YX-TP3DSVB-VGREQ4P-KBADNA4"; };
       };
