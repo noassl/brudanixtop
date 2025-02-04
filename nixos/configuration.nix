@@ -135,6 +135,14 @@
     kdePackages.skanpage
   ];
 
+  # Make Firefox use the KDE file picker: https://nixos.wiki/wiki/Firefox#Use_KDE_file_picker
+  programs.firefox = {
+    enable = true;
+    preferences = {
+      "widget.use-xdg-desktop-portal.file-picker" = 1;
+    };
+  };
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
