@@ -8,9 +8,15 @@
       url = "github:nix-community/home-manager/release-24.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    plasma-manager = {
+      url = "github:nix-community/plasma-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.home-manager.follows = "home-manager";
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@args:
+  outputs = { self, nixpkgs, home-manager, plasma-manager, ... }@args:
     let
       inherit (self) outputs;
 
@@ -27,7 +33,8 @@
     {
       nixosConfigurations = {
         brudanixtop = nixpkgs.lib.nixosSystem {
-          specialArgs = { inherit args system; };
+          specialArgs = { inherit args system plasma-manager; };
+
           modules = [
             ./nixos/configuration.nix
             home-manager.nixosModule
