@@ -16,8 +16,8 @@
 
     shortcuts = {
       kwin = {
-        "Maximize Window" = "Meta+Up";
-        "Close Window" = "Ctrl+Shift+C";
+        "Window Maximize" = "Meta+Up";
+        "Window Close" = "Ctrl+Shift+C";
       };
     };
 
