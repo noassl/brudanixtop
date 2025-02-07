@@ -20,5 +20,7 @@
         "Close Window" = "Ctrl+Shift+C";
       };
     };
+
+    session.sessionRestore.restoreOpenApplicationsOnLogin = "startWithEmptySession";
   };
 }
