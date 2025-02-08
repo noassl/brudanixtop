@@ -132,7 +132,6 @@
   environment.systemPackages = with pkgs; [
     vim
     wget
-    firefox
     neofetch
     keepassxc
     usbutils
@@ -150,6 +149,10 @@
     preferences = {
       "widget.use-xdg-desktop-portal.file-picker" = 1;
     };
+  };
+
+  programs.thunderbird = {
+    enable = true;
   };
 
   # Allow unfree packages
