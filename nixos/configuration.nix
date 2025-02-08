@@ -23,7 +23,6 @@
 
   hardware.bluetooth = {
     enable = true;
-    powerOnBoot = true;
     settings = {
       General = {
         Experimental = true; # Damid ma in Ladestand von de Geräte siagt
