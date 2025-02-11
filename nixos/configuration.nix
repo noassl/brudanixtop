@@ -125,8 +125,6 @@
     ];
   };
 
-  # programs.firefox.enable = true;
-
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -141,6 +139,11 @@
     git
     home-manager
     kdePackages.skanpage
+    starship
+  ];
+
+  fonts.packages = with pkgs; [
+    jetbrains-mono
   ];
 
   # Make Firefox use the KDE file picker: https://nixos.wiki/wiki/Firefox#Use_KDE_file_picker

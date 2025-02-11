@@ -38,4 +38,18 @@
 
     session.sessionRestore.restoreOpenApplicationsOnLogin = "startWithEmptySession";
   };
+
+  programs.konsole = {
+    enable = true;
+    profiles = {
+      "janik" = {
+        colorScheme = "Manjaro-Cyan-Konsole";
+        font = {
+          name = "Jetbrains Mono";
+          size = 11;
+        };
+      };
+    };
+    defaultProfile = "janik";
+  };
 }
