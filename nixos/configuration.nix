@@ -140,6 +140,7 @@
     home-manager
     kdePackages.skanpage
     starship
+    libreoffice-qt6-fresh
   ];
 
   fonts.packages = with pkgs; [
