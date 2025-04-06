@@ -144,7 +144,19 @@
     jetbrains.webstorm
     yarn-berry
     nodejs_20
+#     winbox4
   ];
+
+  # Für Winbox: https://discourse.nixos.org/t/cant-scan-mikrotik-router-on-winbox-in-nixos-but-it-success-detect-connect-from-windows-10-vm/49926
+#   networking.firewall = {
+#     allowedTCPPorts = [ 80 443 ];
+#     allowedUDPPortRanges = [
+#       {
+#         from = 40000;
+#         to = 50000;
+#       }
+#     ];
+#   };
 
   fonts.packages = with pkgs; [
     jetbrains-mono
