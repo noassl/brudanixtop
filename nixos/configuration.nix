@@ -141,6 +141,9 @@
     kdePackages.skanpage
     starship
     libreoffice-qt6-fresh
+    jetbrains.webstorm
+    yarn-berry
+    nodejs_20
   ];
 
   fonts.packages = with pkgs; [
