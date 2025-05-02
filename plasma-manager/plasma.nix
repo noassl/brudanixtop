@@ -18,21 +18,27 @@
       kwin = {
         "Window Maximize" = "Meta+Up";
         "Window Close" = "Ctrl+Shift+C";
+        "Overview" = "Meta";
       };
-    };
 
-    hotkeys.commands = {
-      "Browser" = {
-        command = "firefox";
-        key = "Super+B";
+      "services/thunderbird" = {
+        "_launch" = "Meta+M";
       };
-      "Obsidian" = {
-        command = "obsidian";
-        key = "Super+O";
+
+      "services/systemsettings.desktop" = {
+        "_launch" = "Meta+I";
       };
-      "Thunderbird" = {
-        command = "thunderbird";
-        key = "Super+M";
+
+      "services/obsidian.desktop" = {
+        "_launch" = "Meta+O";
+      };
+
+      "services/firefox" = {
+        "_launch" = "Meta+B";
+      };
+
+      "powerdevil" = {
+        "powerProfile" = "";
       };
     };
 
