@@ -46,6 +46,58 @@
     };
 
     session.sessionRestore.restoreOpenApplicationsOnLogin = "startWithEmptySession";
+
+    panels = [
+      {
+        location = "top";
+        height = 27;
+        widgets = [
+          "org.kde.plasma.kickoff"
+          "org.kde.plasma.appmenu"
+          "org.kde.plasma.panelspacer"
+          {
+            digitalClock = {
+              date.enable = false;
+            };
+          }
+          "org.kde.plasma.panelspacer"
+          {
+            systemTray = {
+              items = {
+                configs = {
+                  battery.showPercentage = true;
+                };
+              };
+            };
+          }
+        ];
+      }
+    ];
+
+    desktop.widgets = [
+      {
+        name = "org.kde.plasma.lock_logout";
+        position = {
+          horizontal = 1495;
+          vertical = 1070;
+        };
+        size = {
+          height = 100;
+          width = 375;
+        };
+        config = {
+          # /nix/store/*/share/plasma/plasmoids/org.kde.plasma.lock_logout/contents/config
+          General = {
+            "show_requestLogout" = false;
+            "show_lockScreen" = true;
+            "show_requestShutDown" = true;
+            "show_requestReboot" = true;
+            "show_requestLogoutScreen" = true;
+            "show_suspendToDisk" = true;
+          };
+        };
+      }
+    ];
   };
 
   programs.konsole = {
