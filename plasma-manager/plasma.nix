@@ -15,10 +15,13 @@
     };
 
     shortcuts = {
+      # config-file: ~/.config/kglobalshortcutsrc
       kwin = {
         "Window Maximize" = "Meta+Up";
         "Window Close" = "Ctrl+Shift+C";
         "Overview" = "Meta";
+        "Switch One Desktop to the Right" = "Ctrl+Alt+Right";
+        "Switch One Desktop to the Left" = "Ctrl+Alt+Left";
       };
 
       "services/thunderbird" = {
