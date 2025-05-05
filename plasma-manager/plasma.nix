@@ -98,6 +98,8 @@
         };
       }
     ];
+
+    workspace.wallpaper = "${pkgs.kdePackages.plasma-workspace-wallpapers}/share/wallpapers/DarkestHour/contents/images/1920x1200.jpg";
   };
 
   programs.konsole = {
