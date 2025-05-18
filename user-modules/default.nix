@@ -1,7 +1,8 @@
-{ config, pkgs, ... }:
+{ ... }:
 
 {
   imports = [
     ./shell.nix
+    ./coding.nix
   ];
 }

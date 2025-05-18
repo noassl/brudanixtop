@@ -11,7 +11,6 @@
       ./locales.nix
       ../users/home-manager.nix
       ../users/janik.nix
-      ../user-modules/default.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
