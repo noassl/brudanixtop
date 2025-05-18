@@ -56,13 +56,4 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
-  programs.git = {
-    enable = true;
-    userName  = "Janik";
-    userEmail = "jneissl27@gmail.com";
-    extraConfig = {
-      init.defaultBranch = "main";
-    };
-  };
-
 }
