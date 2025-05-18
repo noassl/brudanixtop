@@ -9,7 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./locales.nix
-      ../modules/home-manager.nix
+      ../users/home-manager.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
