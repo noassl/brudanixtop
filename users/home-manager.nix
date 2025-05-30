@@ -2,6 +2,8 @@
 
 {
   home-manager = {
+    backupFileExtension = "bkup";
+
     users.janik = {
       imports = [
         ../plasma-manager/plasma.nix

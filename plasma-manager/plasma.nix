@@ -78,12 +78,12 @@
       {
         name = "org.kde.plasma.lock_logout";
         position = {
-          horizontal = 1495;
+          horizontal = 1545;
           vertical = 1070;
         };
         size = {
           height = 100;
-          width = 375;
+          width = 325;
         };
         config = {
           # /nix/store/*/share/plasma/plasmoids/org.kde.plasma.lock_logout/contents/config
