@@ -27,7 +27,6 @@
     git
     home-manager
     kdePackages.skanpage
-    starship
     libreoffice-qt6-fresh
     jetbrains.webstorm
     yarn-berry
