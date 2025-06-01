@@ -101,18 +101,4 @@
 
     workspace.wallpaper = "${pkgs.kdePackages.plasma-workspace-wallpapers}/share/wallpapers/DarkestHour/contents/images/1920x1200.jpg";
   };
-
-  programs.konsole = {
-    enable = true;
-    profiles = {
-      "janik" = {
-        colorScheme = "Manjaro-Cyan-Konsole";
-        font = {
-          name = "Jetbrains Mono";
-          size = 11;
-        };
-      };
-    };
-    defaultProfile = "janik";
-  };
 }

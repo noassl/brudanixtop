@@ -16,15 +16,11 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    vim
-    wget
-    neofetch
     keepassxc
     usbutils
     kdePackages.partitionmanager
     kdePackages.plasma-browser-integration
     obsidian
-    git
     home-manager
     kdePackages.skanpage
     libreoffice-qt6-fresh
