@@ -78,12 +78,12 @@
       {
         name = "org.kde.plasma.lock_logout";
         position = {
-          horizontal = 1495;
+          horizontal = 1545;
           vertical = 1070;
         };
         size = {
           height = 100;
-          width = 375;
+          width = 325;
         };
         config = {
           # /nix/store/*/share/plasma/plasmoids/org.kde.plasma.lock_logout/contents/config
@@ -100,19 +100,5 @@
     ];
 
     workspace.wallpaper = "${pkgs.kdePackages.plasma-workspace-wallpapers}/share/wallpapers/DarkestHour/contents/images/1920x1200.jpg";
-  };
-
-  programs.konsole = {
-    enable = true;
-    profiles = {
-      "janik" = {
-        colorScheme = "Manjaro-Cyan-Konsole";
-        font = {
-          name = "Jetbrains Mono";
-          size = 11;
-        };
-      };
-    };
-    defaultProfile = "janik";
   };
 }
