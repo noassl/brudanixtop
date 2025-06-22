@@ -5,6 +5,8 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  services.fwupd.enable = true;
+
   services.pipewire = {
     enable = true;
     pulse.enable = true;
@@ -18,7 +20,6 @@
       };
     };
   };
-
 
   # libfprint
   systemd.services.fprintd = {
