@@ -34,7 +34,7 @@
           specialArgs = { inherit plasma-manager self; };
 
           modules = [
-            ./nixos/configuration.nix
+            ./configuration.nix
             home-manager.nixosModules.home-manager
           ];
         };
