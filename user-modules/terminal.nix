@@ -24,4 +24,6 @@
     enable = true;
     defaultEditor = true;
   };
+
+  programs.ranger.enable = true;
 }
