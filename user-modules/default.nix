@@ -4,7 +4,7 @@
   imports = [
     ./shell.nix
     ./coding.nix
-    ./desktop.nix
+    ./desktop/default.nix
     ./terminal.nix
   ];
 }

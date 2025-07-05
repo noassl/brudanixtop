@@ -21,7 +21,8 @@
         "Window Close" = "Ctrl+Shift+C";
         "Overview" = "Meta";
         "Switch One Desktop to the Right" = "Ctrl+Alt+Right";
-        "Switch One Desktop to the Left" = "Ctrl+Alt+Left";
+        "Switch One Desktop to the Left" = "CtrShow Desktop=nonel+Alt+Left";
+        "Show Desktop" = "Ctrl+Alt+D";
       };
 
       "services/thunderbird" = {
@@ -42,6 +43,10 @@
 
       "powerdevil" = {
         "powerProfile" = "";
+      };
+
+      "services/discord.desktop" = {
+        "_launch" = "Meta+D";
       };
     };
 

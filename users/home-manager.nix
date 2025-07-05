@@ -20,6 +20,9 @@
       home.stateVersion = "24.11";
     };
 
+    useGlobalPkgs = true;
+    useUserPackages = true;
+
     sharedModules = [ plasma-manager.homeManagerModules.plasma-manager ];
   };
 }
