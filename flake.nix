@@ -18,8 +18,6 @@
 
   outputs = { self, nixpkgs, home-manager, plasma-manager, ... }@args:
     let
-      inherit (self) outputs;
-
       system = "x86_64-linux";
 
       pkgs = import nixpkgs {
@@ -33,7 +31,7 @@
     {
       nixosConfigurations = {
         brudanixtop = nixpkgs.lib.nixosSystem {
-          specialArgs = { inherit args system plasma-manager; };
+          specialArgs = { inherit plasma-manager self; };
 
           modules = [
             ./nixos/configuration.nix
