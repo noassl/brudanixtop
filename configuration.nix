@@ -18,9 +18,6 @@
     home-manager
     kdePackages.skanpage
     libreoffice-qt6-fresh
-    jetbrains.webstorm
-    yarn-berry
-    nodejs_20
 #     winbox4
   ];
 
