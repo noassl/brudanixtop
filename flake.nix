@@ -40,14 +40,6 @@
         };
       };
 
-      devShells."${system}".neisslAT = let
-      in
-        pkgs.mkShell {
-          packages = with pkgs; [
-            jetbrains.webstorm
-            yarn-berry
-            nodejs_20
-          ];
-        };
+      devShells."${system}" = (import ./devshells/default.nix { inherit pkgs; } );
     };
 }
