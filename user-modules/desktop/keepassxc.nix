@@ -10,6 +10,7 @@
       Browser = {
         Enabled = true;
         UpdateBinaryPath = false;
+        AlwaysAllowAccess = true;
       };
 
       GUI = {
